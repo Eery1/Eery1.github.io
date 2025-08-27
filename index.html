@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV en Astro</title> <!-- Ya puse el texto "Astro" directamente -->
+    <style>
+        body {
+            background: #f6f8fa;
+            margin: 0;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .cv-container {
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e1e4e8;
+        }
+        .header-con-foto {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 20px;
+        }
+        .foto-container {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #e1e4e8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #3498db;
+            flex-shrink: 0;
+        }
+        .foto-texto {
+            color: #6a737d;
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 10px;
+        }
+        .info-header {
+            flex: 1;
+        }
+        h1 {
+            color: #2c3e50;
+            margin: 0 0 5px 0;
+        }
+        h2 {
+            color: #0366d6;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 10px;
+            margin-top: 25px;
+        }
+        h3 {
+            display: block;
+            font-size: 1.2rem;
+            margin: 20px 0 10px 0;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: '- ';
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        p, li {
+            color: #586069;
+            margin: 5px 0;
+        }
+        .seccion {
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header class="header-con-foto">
+            <div class="foto-container">
+                <div class="foto-texto">
+                    foto
+                </div>
+            </div>
+            <div class="info-header">
+                <h1>Exal Eliel Rodas Yañez</h1> <!-- Aquí puse el nombre directo -->
+                <p>Estudiante de ISC</p>
+            </div>
+        </header>        
+
+        <div class="seccion">
+            <h2>Recorrido estudiantil</h2>
+            <ul>
+                <li>Ingeniería en sistemas computacionales - Universidad autónoma de Tamaulipas UAT [En curso]</li>
+                <li>Técnico en programación - ITACE [2020-2023]</li>
+            </ul>
+        </div>
+       
+        <div class="seccion">
+            <h2>Skills obtenidas</h2>
+            <h3>Técnicas</h3>
+            <ul>
+                <li>Desarrollo de un punto de venta en Java</li>
+                <li>Desarrollo de un punto de venta con Laravel</li>
+                <li>Desarrollo de aplicaciones web con Mendix</li>
+                <li>Desarrollo de un sistema de asistencia a alumnos</li>
+            </ul>
+            <h3>Blandas</h3>
+            <ul>
+                <li>Trabajo en equipo</li>
+                <li>Creatividad: diseño de interfaces atractivas</li>
+                <li>Resolución de problemas</li>
+            </ul>
+        </div>
+
+        <div class="seccion">
+            <h2>Tecnologías utilizadas</h2>
+            <h3>Lenguajes de programación</h3>
+            <ul>
+                <li>JavaScript, HTML, Java, PHP</li>
+            </ul>
+            <h3>Frameworks</h3>
+            <ul>
+                <li>React</li>
+                <li>Astro</li> <!-- Aquí también -->
+                <li>Laravel</li>
+            </ul>
+            <h3>Herramientas de desarrollo</h3>
+            <ul>
+                <li>Git/GitHub, VS Code, Figma</li>
+            </ul>
+        </div>
+
+        <div class="seccion">
+            <h2>Contacto</h2>
+            <p>Email: a2233336177@alumnos.uat.edu.mx</p>
+        </div>
+    </div>
+</body>
+</html>
