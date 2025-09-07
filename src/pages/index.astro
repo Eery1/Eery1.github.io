@@ -248,6 +248,21 @@ const nombre = "Exal Eliel Rodas Yañez";
             font-weight: 600;
         }
 
+        .certificados a {
+            color: var(--color-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .certificados a:hover {
+            color: var(--color-accent);
+        }
+
+        .certificados li {
+            margin: 10px 0;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .content {
@@ -293,7 +308,9 @@ const nombre = "Exal Eliel Rodas Yañez";
     <div class="cv-container">
         <div class="header">
             <h1>{nombre}</h1>
-            
+            <p> Programador apasionado por la tecnologia y el desarrollo web,
+                me gusta compartir mis conociminetos y enfrentar nuevos
+                retos para mejorar mis habilidades .</p>
         </div>
 
         <div class="content">
@@ -301,7 +318,7 @@ const nombre = "Exal Eliel Rodas Yañez";
                 <div class="section">
                     <h3 class="section-title">Contacto</h3>
                     <ul class="contact-info">
-                        <li>Email: a2233336177@alumnos.uat.edu.mx</li>
+                        <li>Email: <a href="mailto:a2233336177@alumnos.uat.edu.mx">a2233336177@alumnos.uat.edu.mx</a></li>
                         <li>Num Tel: 8145599806</li>
                     </ul>
                     
@@ -383,6 +400,19 @@ const nombre = "Exal Eliel Rodas Yañez";
                         <h4 class="education-title">Técnico en Programación</h4>
                         <p class="education-details">ITACE | 2020 - 2023</p>
                     </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="section certificados">
+                    <h3 class="section-title">Certificados</h3>
+                    <ul>
+                        <li><a href="/certificados/Desarrollador de interfaces graficas.pdf" target="_blank" rel="noopener noreferrer">Desarrollador de interfaces gráficas</a></li>
+                        <li><a href="/certificados/Evaluador de experiencia de usuario.pdf" target="_blank" rel="noopener noreferrer">Evaluador de experiencia de usuario</a></li>
+                        <li><a href="/certificados/Introduccion a la programacion.pdf" target="_blank" rel="noopener noreferrer">Introducción a la programación</a></li>
+                        <li><a href="/certificados/Programador (Orientado a objetos).pdf" target="_blank" rel="noopener noreferrer">Programador (Orientado a objetos)</a></li>
+                        <li><a href="/certificados/Programador en c#.pdf" target="_blank" rel="noopener noreferrer">Programador en C#</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
